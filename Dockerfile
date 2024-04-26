@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 MAINTAINER Mryan2005
 LABEL authors="Mryan2005"
 ENV TZ=Asia/Shanghai

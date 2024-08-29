@@ -5,8 +5,8 @@ ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo '$TZ' > /etc/timezone
 RUN apt-get update && apt-get install -y python3 python3-pip wget 
 RUN apt install xvfb x11vnc -y
-RUN wget https://ftp.mozilla.org/pub/firefox/releases/122.0/linux-x86_64/en-US/firefox-122.0.tar.bz2
-RUN tar xjf firefox-122.0.tar.bz2
+RUN wget https://ftp.mozilla.org/pub/firefox/releases/129.0.2/linux-x86_64/en-US/firefox-129.0.2.tar.bz2
+RUN tar xjf firefox-129.0.2.tar.bz2
 RUN mv firefox /opt
 RUN ln -s /opt/firefox/firefox /usr/local/bin/firefox
 RUN echo 'export PATH=$PATH:/usr/bin/firefox' >> ./.bash_profile
